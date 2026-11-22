@@ -1,0 +1,2 @@
+# 32_PSW_G-nesisRodriguez
+Repositorio 32_PSW_GénesisRodriguez
