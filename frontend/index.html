@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 LookMaker - Generador de Looks de Moda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>✨ LookMaker</h1>
+                <p class="subtitle">Tu generador personal de looks de moda</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#looks" id="nav-looks">Mis Looks</a></li>
+                    <li><a href="#crear" id="nav-crear">Crear Look</a></li>
+                    <li><a href="#login" id="nav-login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Section: Looks -->
+            <section id="looks-section" class="section active">
+                <h2>✨ Mis Looks</h2>
+                <div id="looks-container" class="looks-grid">
+                    <!-- Se llena dinámicamente -->
+                </div>
+            </section>
+
+            <!-- Section: Crear Look -->
+            <section id="crear-section" class="section">
+                <h2>🎨 Crear Nuevo Look</h2>
+                <form id="create-look-form" class="form-container">
+                    <div class="form-group">
+                        <label for="nombre">Nombre del Look:</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            placeholder="Ej: Casual Chic" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea 
+                            id="descripcion" 
+                            name="descripcion" 
+                            placeholder="Describe tu look..."
+                            rows="3"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prendas">Prendas (separadas por coma):</label>
+                        <input 
+                            type="text" 
+                            id="prendas" 
+                            name="prendas" 
+                            placeholder="Ej: Jeans azul, Blusa blanca, Tacones negros"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ocacion">Ocasión:</label>
+                        <select id="ocacion" name="ocacion">
+                            <option value="Casual">Casual</option>
+                            <option value="Formal">Formal</option>
+                            <option value="Noche">Noche</option>
+                            <option value="Playa">Playa</option>
+                            <option value="Deporte">Deporte</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btn-crear">
+                        Crear Look ✨
+                    </button>
+                </form>
+            </section>
+
+            <!-- Section: Login -->
+            <section id="login-section" class="section">
+                <h2>🔐 Iniciar Sesión</h2>
+                <form id="login-form" class="form-container">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input 
+                            type="email" 
+                            id="login-email" 
+                            name="email" 
+                            placeholder="tu@email.com" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Contraseña:</label>
+                        <input 
+                            type="password" 
+                            id="login-password" 
+                            name="password" 
+                            placeholder="Tu contraseña"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btn-login">
+                        Iniciar Sesión 🔓
+                    </button>
+                </form>
+
+                <hr>
+                <h3>Crear Cuenta</h3>
+                <form id="register-form" class="form-container">
+                    <div class="form-group">
+                        <label for="register-nombre">Nombre Completo:</label>
+                        <input 
+                            type="text" 
+                            id="register-nombre" 
+                            name="nombre" 
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-email">Email:</label>
+                        <input 
+                            type="email" 
+                            id="register-email" 
+                            name="email" 
+                            placeholder="tu@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">Contraseña:</label>
+                        <input 
+                            type="password" 
+                            id="register-password" 
+                            name="password" 
+                            placeholder="Tu contraseña"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary" id="btn-register">
+                        Registrarse 💖
+                    </button>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- Alert Messages -->
+        <div id="alert-container"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

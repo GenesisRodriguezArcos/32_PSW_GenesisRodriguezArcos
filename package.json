@@ -1,0 +1,23 @@
+{
+  "name": "lookmaker",
+  "version": "1.0.0",
+  "description": "Aplicación de gestión de looks de moda - Fashion Outfit Planner",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node tests/selenium_tests.js",
+    "dev": "node backend/server.js"
+  },
+  "keywords": ["moda", "outfit", "looks", "fashion"],
+  "author": "LookMaker",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "selenium-webdriver": "^4.15.0",
+    "chromedriver": "^119.0.0"
+  }
+}

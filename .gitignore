@@ -1,0 +1,50 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+.eslintcache
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Operating System
+Thumbs.db
+.DS_Store
+
+# Build output
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Package lock (opcional, descomenta si quieres versionarlo)
+# package-lock.json
+
+# Chrome driver
+chromedriver
+chromedriver.exe
+
+# OWASP ZAP files
+*.openapi
+*.json.tmp
+
+# Browser downloads
+downloads/
